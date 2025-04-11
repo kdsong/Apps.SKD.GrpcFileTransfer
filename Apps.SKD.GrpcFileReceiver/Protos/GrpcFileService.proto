@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option csharp_namespace = "Apps.SKD.GrpcFileReceiver.Protos";
 
-service FileService {
+service GrpcFileService {
     rpc UploadFile (stream FileUploadRequest) returns (UploadStatus);
 }
 
