@@ -6,9 +6,11 @@
 
 ## 2. WORK NOTE
 
-### 2.1. CAUSE
+### 2.1. WORK HISTORY
 
-### 2.2. RESOLUTION
+[#2(https://github.com/kdsong/Apps.SKD.GrpcFileTransfer/issues/2#issue-2987567670)] Add default implementation code to Apps.SKD.GrpcFileSender project
+
+### 2.2. UNTITLED
 <br>
 
 
