@@ -8,12 +8,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SKD.Utility" Version="1.1.42" />
+      <PackageReference Include="SKD.Utility" Version="1.1.42" />
+      <PackageReference Include="Google.Protobuf" Version="3.21.5" />
+      <PackageReference Include="Grpc.Net.ClientFactory" Version="2.49.0" />
+      <PackageReference Include="Grpc.Tools" Version="2.49.0">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>  
   </ItemGroup>
 
   <ItemGroup>
     <None Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Protos\GrpcFileService.proto">
+      <GrpcServices>Client</GrpcServices>
     </None>
   </ItemGroup>
 
