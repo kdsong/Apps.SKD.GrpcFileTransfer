@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34322.80
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apps.SKD.GrpcFileReceiver", "Apps.SKD.GrpcFileReceiver\Apps.SKD.GrpcFileReceiver.csproj", "{D57D753D-F979-4882-9465-799EC5B02F0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apps.SKD.GrpcFileSender", "Apps.SKD.GrpcFileSender\Apps.SKD.GrpcFileSender.csproj", "{BE879515-59CC-43ED-BF38-66817D80C175}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D57D753D-F979-4882-9465-799EC5B02F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D57D753D-F979-4882-9465-799EC5B02F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D57D753D-F979-4882-9465-799EC5B02F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D57D753D-F979-4882-9465-799EC5B02F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE879515-59CC-43ED-BF38-66817D80C175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE879515-59CC-43ED-BF38-66817D80C175}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE879515-59CC-43ED-BF38-66817D80C175}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE879515-59CC-43ED-BF38-66817D80C175}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {972DE61A-62F9-4D2A-8BD7-B586F44937CE}
+	EndGlobalSection
+EndGlobal
