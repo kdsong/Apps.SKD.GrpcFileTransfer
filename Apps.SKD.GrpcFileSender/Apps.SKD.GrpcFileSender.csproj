@@ -18,11 +18,12 @@
   </ItemGroup>
 
   <ItemGroup>
+      <Protobuf Include="Protos\GrpcFileService.proto" GrpcServices="Client" />
+  </ItemGroup>    
+        
+  <ItemGroup>
     <None Update="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Protos\GrpcFileService.proto">
-      <GrpcServices>Client</GrpcServices>
     </None>
   </ItemGroup>
 

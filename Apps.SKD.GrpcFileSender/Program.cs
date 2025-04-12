@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using SKD.Utility;
+using Apps.SKD.GrpcFileSender.Services;
 
 namespace Apps.SKD.GrpcFileSender;
 
@@ -46,7 +47,7 @@ internal class Program
         var host = Host.CreateDefaultBuilder()
             .ConfigureServices((context, services) =>
             {
-                //services.AddTransient<IServiceGrpcFileSender, ServiceGrpcFileSender>();
+                services.AddTransient<IServiceGrpcFileSender, ServiceGrpcFileSender>();
             })
             .UseSerilog()
             .Build();
@@ -78,18 +79,17 @@ internal class Program
         if (isCreateMainMenu)
         {
             SeriHelper.Info("MAIN", "Creating ServiceGrpcFileSender object");
-            //var ServiceGrpcFileSender = ActivatorUtilities.CreateInstance<ServiceGrpcFileSender>(serviceProvider);
-            //if (isRunMainMenu)
-            //{
-            //    SeriHelper.Info("MAIN", "Running ServiceGrpcFileSender object");
-            //    ServiceGrpcFileSender.Run();
-            //}
-            //if (isShowMenuMainMenu)
-            //{
-            //    SeriHelper.Info("MAIN", "Show Menu of ServiceGrpcFileSender object");
-            //    ServiceGrpcFileSender.ShowMenu();
-            //}
-            SeriHelper.Info("MAIN", "");
+            var ServiceGrpcFileSender = ActivatorUtilities.CreateInstance<ServiceGrpcFileSender>(serviceProvider);
+            if (isRunMainMenu)
+            {
+                SeriHelper.Info("MAIN", "Running ServiceGrpcFileSender object");
+                ServiceGrpcFileSender.Run();
+            }
+            if (isShowMenuMainMenu)
+            {
+                SeriHelper.Info("MAIN", "Show Menu of ServiceGrpcFileSender object");
+                ServiceGrpcFileSender.ShowMenu();
+            }
         }
         Thread.Sleep(500);
     }

@@ -73,7 +73,7 @@ namespace Apps.SKD.GrpcFileReceiver
             if (isCreateMainMenu)
             {
                 SeriHelper.Info("MAIN", "Creating ServiceGrpcFileReceiver object");
-                //var ServiceGrpcFileReceiver = ActivatorUtilities.CreateInstance<ServiceGrpcFileReceiver>(serviceProvider);
+                var ServiceGrpcFileReceiver = ActivatorUtilities.CreateInstance<ServiceGrpcFileReceiver>(serviceProvider);
                 //if (isRunMainMenu)
                 //{
                 //    SeriHelper.Info("MAIN", "Running ServiceGrpcFileReceiver object");
@@ -84,7 +84,6 @@ namespace Apps.SKD.GrpcFileReceiver
                 //    SeriHelper.Info("MAIN", "Show Menu of ServiceGrpcFileReceiver object");
                 //    ServiceGrpcFileReceiver.ShowMenu();
                 //}
-                SeriHelper.Info("MAIN", "");
             }
             Thread.Sleep(500);
         }
